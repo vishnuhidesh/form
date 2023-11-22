@@ -16,7 +16,7 @@ function validation(){
     }
 
     let em = document.forms["myForm"]["emailid"].value
-    emailregex = /[a-z0-9]+@[a-z]+.+[a-z]/
+    // emailregex = /[a-z0-9]+@[a-z]+.+[a-z]/
     
 
 

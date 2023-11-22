@@ -1,40 +1,301 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Validation</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
-  </head>
-  <body style="display: flex; align-items: center; justify-content: center">
-    <form action="success.html" name="myForm" onsubmit="return validation()">
-      <table style="border: 2px solid black; width: 500px; height: auto">
-        <tr>
-          <th>Form Validation</th>
-        </tr>
-        <tr>
-          <td>First Name: &nbsp;&nbsp; <input type="text" name="fname"></td>
-        </tr>
-        <tr>
-          <td>Last Name: &nbsp;&nbsp; <input type="text" name="lname"></td>
-        </tr>
-        <tr>
-          <td>Email: &nbsp;&nbsp; <input type="email" name="emailid"></td>
-        </tr>
-        <tr>
-          <td>Password: &nbsp;&nbsp; <input type="password" name="pword"></td>
-        </tr>
-        <tr>
-          <td>Confirm Password: &nbsp;&nbsp; <input type="password" name="cpword"></td>
-        </tr>
-        <tr>
-          <td>Mobile No.: &nbsp;&nbsp; <input type="tel" name="mobno"></td>
-        </tr>
-        <tr>
-          <td><input type="submit" name="sub" value="Register"></td>
-        </tr>
-      </table>
+<div class="main-wrapper">
+  <div class="form-wrapper">
+    
+    <img src="your-image-url-here.jpg">
+
+    <form action="success.html" method="post">
+      <div class="form-title">
+        <h2 class="">Register now</h2>
+        <p>
+          This is an example of a form validation using JavaScript.
+        </p>
+      </div>
+
+      <div class="input-flex">
+        <div>
+          <label for="firstname" class="form-label">
+            First name
+          </label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <label for="lastname" class="form-label"> Last name </label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            class="form-input"
+          />
+        </div>
+      </div>
+
+      <div class="input-flex">
+        <div>
+          <label for="email" class="form-label"> Email </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <label for="phone" class="form-label"> Phone number </label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            class="form-input"
+          />
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address" class="form-label">
+          Street Address
+        </label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          class="form-input"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="address2" class="form-label">
+          Street Address Line 2
+        </label>
+        <input
+          type="text"
+          name="address2"
+          id="address2"
+          class="form-input"
+        />
+      </div>
+
+      <div class="input-flex">
+        <div>
+          <label for="state" class="form-label"> State/Prvince </label>
+          <input
+            type="text"
+            name="state"
+            id="state"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <label for="country" class="form-label"> Country </label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            class="form-input"
+          />
+        </div>
+      </div>
+
+      <div class="input-flex">
+        <div>
+          <label for="post" class="form-label"> Post/Zip code </label>
+          <input
+            type="text"
+            name="post"
+            id="post"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <label for="area" class="form-label"> Area Code </label>
+          <input
+            type="text"
+            name="area"
+            id="area"
+            class="form-input"
+          />
+        </div>
+      </div>
+
+      <div class="checkbox-wrapper">
+        <label for="supportCheckbox" class="checkbox-label">
+          <div class="relative">
+            <input
+              type="checkbox"
+              id="supportCheckbox"
+              class="input-checkbox"
+            />
+            <div class="checkbox-inner">
+              <span class="opacity-0">
+                <svg
+                  width="11"
+                  height="8"
+                  viewBox="0 0 11 8"
+                  fill="none"
+                  class="stroke-current"
+                >
+                  <path
+                    d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
+                    stroke-width="0.4"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+          I agree to the defined
+          <a href="#"> terms, conditions, and policies</a>
+        </label>
+      </div>
+
+      <button class="btn">Register Now</button>
     </form>
-  </body>
-</html>
+  </div>
+</div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  .mb-3 {
+    margin-bottom: 15px;
+  }
+  .relative {
+    position: relative;
+  }
+  .opacity-0 {
+    opacity: 0;
+  }
+  .stroke-current {
+    stroke: currentColor;
+  }
+  #supportCheckbox:checked ~ div span {
+    opacity: 1;
+  }
+
+  .main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .form-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+  }
+
+  .img {
+    margin-bottom: 45px;
+  }
+
+  .form-title {
+    margin-bottom: 30px;
+  }
+  .form-title h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #07074d;
+  }
+  .form-title p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+    margin-top: 12px;
+  }
+
+  .input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .input-flex > div {
+    width: 50%;
+  }
+  .form-input {
+    text-align: center;
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+  }
+  .form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .form-label {
+    color: #536387;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-label {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+  }
+  .checkbox-label a {
+    margin-left: 5px;
+    color: #6a64f1;
+  }
+  .input-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .checkbox-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    margin-top: 2px;
+    border: 0.7px solid #dde3ec;
+    border-radius: 3px;
+  }
+
+  .btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+</style>
